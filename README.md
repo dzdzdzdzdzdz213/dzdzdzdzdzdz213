@@ -41,7 +41,6 @@ Mobile Development, Backend Engineering, Software Architecture
 
 ### 📫 Contact
 
-- Email: aimenmamache0@gmail.com  
 - GitHub: [@dzdzdzdzdzdz213](https://github.com/dzdzdzdzdzdz213)
 
 ---
