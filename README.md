@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Aimen 👋</h1>
-<h3 align="center">Cybersecurity Student & Full-Stack Developer</h3>
+<h3 align="center">Full-Stack Developer & Android Engineer</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=dzdzdzdzdzdz213&label=Profile%20Views&color=0e75b6&style=flat" alt="profile views" />
@@ -16,11 +16,11 @@ C, Java, JavaScript, Python, Kotlin, SQL
 Android (Kotlin), FastAPI, Vue.js, Git, Docker, SQLite, Supabase
 
 **Focus Areas:**  
-Cybersecurity, Mobile Development, Reverse Engineering
+Mobile Development, Backend Engineering, Software Architecture
 
 ---
 
-### 📌 Pinned Projects
+### 📌 Projects
 
 | Project | Description |
 |---------|-------------|
