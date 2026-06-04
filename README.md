@@ -1,16 +1,22 @@
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&center=true&vCenter=true&width=435&lines=Hi+%F0%9F%91%8B%2C+I'm+Aimen;Full-Stack+Developer;Android+Engineer" alt="Typing SVG" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
+</p>
+
+<h1 align="center">Hi 👋, I'm Aimen</h1>
+<h3 align="center">Android & Full-Stack Developer</h3>
+
+<p align="center">
+  <a href="https://github.com/dzdzdzdzdzdz213">
+    <img src="https://img.shields.io/github/followers/dzdzdzdzdzdz213?label=Followers&style=social" />
+  </a>
+  <a href="https://github.com/dzdzdzdzdzdz213?tab=repositories">
+    <img src="https://img.shields.io/badge/Repos-6-blue" />
+  </a>
 </p>
 
 ---
 
-### 👨‍💻 About Me
-
-I build mobile and web applications — from Android apps in Kotlin to backend APIs with FastAPI.
-
----
-
-### 🛠 Skills
+### 🛠 Tech Stack
 
 <p>
   <img src="https://img.shields.io/badge/Kotlin-B125EA?style=flat&logo=kotlin&logoColor=white" />
@@ -22,6 +28,7 @@ I build mobile and web applications — from Android apps in Kotlin to backend A
   <br/>
   <img src="https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white" />
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
   <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
@@ -32,25 +39,19 @@ I build mobile and web applications — from Android apps in Kotlin to backend A
 
 ### 📌 Projects
 
-| Project | Stack |
-|---------|-------|
-| [Aureole Reader](https://github.com/ouaell/aureole) | Kotlin, Android |
-| [Flight Reservation](https://github.com/dzdzdzdzdzdz213/Flight-Reservation-Simulator) | C |
-| [Uno Game](https://github.com/dzdzdzdzdzdz213/UnoGame) | Java |
-| [Chemloul Radiologie](https://github.com/dzdzdzdzdzdz213/Pfe) | React, Supabase, Tailwind |
-| [Menu](https://github.com/dzdzdzdzdzdz213/Menu) | JavaScript, Web |
-
----
-
-### 📈 Stats
-
-<p align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=dzdzdzdzdzdz213&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dzdzdzdzdzdz213&layout=compact&theme=dark&hide_border=true&bg_color=0d1117" />
-</p>
+| Project | Description | Stack |
+|---------|-------------|-------|
+| [Chemloul Radiologie](https://github.com/dzdzdzdzdzdz213/Pfe) | Clinic management platform | React, Supabase, Tailwind |
+| [Flight Reservation](https://github.com/dzdzdzdzdzdz213/Flight-Reservation-Simulator) | Flight booking system | C |
+| [Uno Game](https://github.com/dzdzdzdzdzdz213/UnoGame) | Console card game | Java |
+| [Menu](https://github.com/dzdzdzdzdzdz213/Menu) | Restaurant menu web app | JavaScript |
 
 ---
 
 <p align="center">
   <a href="https://github.com/dzdzdzdzdzdz213">github.com/dzdzdzdzdzdz213</a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
