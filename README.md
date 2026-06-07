@@ -1,62 +1,109 @@
-# Hey, I'm Aimen 👋
-
-I build **cybersecurity tools** — network monitors, detection engines, forensic analyzers, and red team infrastructure. I work across the full stack (Python, React, FastAPI) and low-level systems (Assembly, C, PowerShell).
+<div align="center">
+  
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00FF00&center=true&vCenter=true&width=500&lines=Hey%2C+I'm+Aimen;Security+Engineer;Tool+Builder;Network+Defender" alt="Typing SVG" />
+  
+  <p>
+    <a href="https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline"><img src="https://img.shields.io/badge/CloudSec_Pipeline-OPA%2FRego-7B2FF7?style=flat-square&logo=openpolicyagent&logoColor=white" /></a>
+    <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey"><img src="https://img.shields.io/badge/50_Cybersec_Tools-FF6B6B?style=flat-square&logo=python&logoColor=white" /></a>
+    <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall"><img src="https://img.shields.io/badge/ShieldWall-IDS-00ADD8?style=flat-square&logo=fastapi&logoColor=white" /></a>
+    <img src="https://img.shields.io/badge/MITRE_ATT%26CK-Mapped-005A9C?style=flat-square&logo=mitre&logoColor=white" />
+    <img src="https://komarev.com/ghpvc/?username=dzdzdzdzdzdz213&style=flat-square&color=00FF00" />
+  </p>
+  
+</div>
 
 ---
 
-## 🔭 Featured Project
+I build **cybersecurity infrastructure** — network monitors, policy engines, detection systems, and red team tools. I work across the stack, from Python/FastAPI backends and React dashboards to low-level x86 Assembly and C.
+
+---
+
+## 📌 Featured Projects
 
 ### [ShieldWall — Network Security Monitor](https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall)
-
-A production-ready network IDS with real-time traffic capture, signature-based detection, MITRE ATT&CK mapping, and a live React dashboard.
+> **Real-time IDS with plugin detection engine, MITRE ATT&CK mapping, and live dashboard**
 
 ```
-FastAPI  →  Scapy/PCAP capture  →  Plugin detection engine  →  WebSocket  →  React dashboard
+FastAPI  →  Scapy packet capture  →  Plugin detectors (port scan, SQLi, DNS tunnel, brute force)
+           →  MITRE ATT&CK enrichment  →  WebSocket  →  React + Recharts dashboard
 ```
 
-- 8 built-in detection rules (port scans, SQLi, DNS tunneling, brute force, etc.)
-- Plugin system for custom detectors (drop a `.py` file, reloads automatically)
-- YAML rule engine with hot-reload
-- MITRE ATT&CK enrichment on every alert
-- Output to Elasticsearch, Syslog, Webhooks, Kafka
-- Docker + docker-compose for production deployment
-- Configurable via YAML (auth, rate limiting, storage, multi-interface)
+- 8 built-in detection rules with hot-reloadable plugin system
+- YAML config: auth, rate limiting, multi-interface capture, output sinks
+- Output pipelines: **SQLite**, **Elasticsearch**, **Syslog**, **Webhook**, **Kafka**
+- Docker Compose deployment with ES + Kibana + Redis
+- 40+ MITRE ATT&CK technique mappings per alert
 
 ---
 
-## 🛠️ [Cybersec Journey](https://github.com/dzdzdzdzdzdz213/cybersec-journey) — 50 Security Tools
+### [CloudSec Pipeline — GitOps Security Policy Engine](https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline)
+> **OPA/Rego policies blocking insecure infrastructure before it reaches production**
 
-A monorepo of 50 cybersecurity projects spanning Python, PowerShell, Assembly, and HTML — covering:
+```
+PR pushed (Terraform/K8s)  →  GitHub Actions  →  OPA policy evaluation
+                                                →  Pass? ArgoCD deploys
+                                                →  Fail? PR blocked
+```
 
-| Domain | Tools |
-|--------|-------|
+- **10 OPA policies**: 5 AWS (SGs, S3, IAM, encryption, logging) + 5 K8s (pods, resources, RBAC, network, namespaces)
+- CI/CD integration: GitHub Actions checks every PR, posts results, blocks violations
+- Gatekeeper constraint templates + ArgoCD app-of-apps for production K8s
+- 17 OPA unit tests validating every policy rule
+- Secure + insecure Terraform/K8s examples for testing
+- Go CLI tool, Docker Compose local dev, Kind deployment script
+
+---
+
+### [Cybersec Journey — 50 Security Tools](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
+Monorepo of 50 independently-runnable tools spanning 7 security domains:
+
+| Domain | Highlight Tools |
+|--------|----------------|
 | **Network Security** | Packet sniffer, IDS, DNS tunnel, port knocking, honeypot |
-| **Cryptography** | Steganography, hash chains, quantum-resistance, ZK proofs |
-| **Digital Forensics** | Disk imaging, file carving, memory analysis, timeline builder |
-| **Red Teaming** | C2 framework, payload generation, lateral movement |
-| **Web Security** | XSS/SQLi/CSRF testing, JWT inspector |
+| **Cryptography** | Steganography, hash chains, ZK proofs, lattice crypto |
+| **Digital Forensics** | Disk imager, file carver, memory analyzer, timeline builder |
+| **Red Teaming** | C2 framework, payload dropper, lateral movement, keylogger |
+| **Web Security** | SQLi/XSS scanner, JWT inspector, CSRF tester |
 | **OSINT** | Domain fingerprinting, social mapper, WHOIS intelligence |
-| **Malware Analysis** | Shellcode analyzer, YARA scanner, behavioral graph |
-
-Every tool is independently runnable with its own README and usage examples.
+| **Malware Analysis** | YARA scanner, shellcode analyzer, behavioral graph |
 
 ---
 
-## 🧰 Tech Stack
+## 🧰 Skills & Tools
 
 ```
-Languages:    Python, PowerShell, Assembly (x86/x64), JavaScript, HTML/CSS, C
-Frameworks:   FastAPI, React, Flask, Scapy, YARA
-Infra:        Docker, SQLite, PostgreSQL, Elasticsearch, Redis
-Security:     Network analysis, cryptography, forensics, malware analysis, OSINT
+Languages      Python  ·  C  ·  x86/x64 Assembly  ·  JavaScript  ·  PowerShell  ·  Go  ·  Rego
+Frameworks     FastAPI  ·  React  ·  Flask  ·  Recharts  ·  Scapy  ·  YARA
+Infrastructure Docker  ·  Kubernetes  ·  ArgoCD  ·  OPA/Gatekeeper  ·  Terraform
+Storage        SQLite  ·  PostgreSQL  ·  Elasticsearch  ·  Redis
+Security       Network analysis  ·  Cryptography  ·  Forensics  ·  Malware analysis  ·  OSINT
 ```
 
 ---
 
-## 📊 GitHub
+## 📈 GitHub Stats
 
-[![Cybersec Journey](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cybersec-journey&theme=dark&hide_border=true)](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
+<div align="center">
+  
+  <a href="https://github.com/dzdzdzdzdzdz213">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dzdzdzdzdzdz213&show_icons=true&theme=dark&hide_border=true&include_all_commits=true&count_private=true" />
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dzdzdzdzdzdz213&layout=compact&theme=dark&hide_border=true&langs_count=8" />
+  </a>
+  
+  <br />
+  
+  [![ShieldWall](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cybersec-journey&theme=dark&hide_border=true&description_lines_count=2)](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
+  [![CloudSec Pipeline](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cloudsec-pipeline&theme=dark&hide_border=true&description_lines_count=2)](https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline)
+  
+</div>
 
 ---
 
-*Building tools that make networks safer. Open to security engineering roles.*
+<div align="center">
+  
+  *Building tools that make networks safer. Open to security engineering roles.*
+
+  <a href="mailto:aimenmamache0@gmail.com"><img src="https://img.shields.io/badge/Email-aimenmamache0%40gmail.com-red?style=flat-square&logo=gmail&logoColor=white" /></a>
+  <a href="https://github.com/dzdzdzdzdzdz213"><img src="https://img.shields.io/badge/GitHub-dzdzdzdzdzdz213-181717?style=flat-square&logo=github&logoColor=white" /></a>
+  
+</div>
