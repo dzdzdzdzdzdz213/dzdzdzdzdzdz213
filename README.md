@@ -1,57 +1,59 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=header"/>
-</p>
+<div align="center">
 
-<h1 align="center">Hi 👋, I'm Aimen</h1>
-<h3 align="center">Full-Stack Developer</h3>
+# 👋 Hello, I'm Aimen
 
-<p align="center">
-  <a href="https://github.com/dzdzdzdzdzdz213">
-    <img src="https://img.shields.io/github/followers/dzdzdzdzdzdz213?label=Followers&style=social" />
-  </a>
-  <a href="https://github.com/dzdzdzdzdzdz213?tab=repositories">
-    <img src="https://img.shields.io/badge/Repos-6-blue" />
-  </a>
-</p>
+**Security Researcher & Tool Builder**
 
 ---
 
-### 🛠 Tech Stack
-
-<p>
-  <img src="https://img.shields.io/badge/Kotlin-B125EA?style=flat&logo=kotlin&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=flat&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black" />
-  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white" />
-  <br/>
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat&logo=android&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat&logo=vuedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white" />
-</p>
+[![Cybersec Journey](https://img.shields.io/badge/🔬_Cybersec_Journey-50_projects-00d2ff?style=for-the-badge)](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
 
 ---
 
-### 📌 Projects
+### 🛡️ What I Build
 
-| Project | Description | Stack |
-|---------|-------------|-------|
-| [Chemloul Radiologie](https://github.com/dzdzdzdzdzdz213/Pfe) | Clinic management platform | React, Supabase, Tailwind |
-| [Flight Reservation](https://github.com/dzdzdzdzdzdz213/Flight-Reservation-Simulator) | Flight booking system | C |
-| [Uno Game](https://github.com/dzdzdzdzdzdz213/UnoGame) | Console card game | Java |
-| [Menu](https://github.com/dzdzdzdzdzdz213/Menu) | Restaurant menu web app | JavaScript |
+| Area | Projects |
+|------|----------|
+| **Network Security** | Packet capture, IDS, DNS tunneling, port knocking, honeypots |
+| **Cryptography** | Steganography, hash chains, quantum resistance, ZK proofs |
+| **Forensics** | Disk imaging, file carving, memory analysis, timeline reconstruction |
+| **Red Team** | C2 frameworks, payload generation, lateral movement, pivoting |
+| **Web Security** | XSS, SQLi, CSRF testing tools, JWT analysis |
+| **OSINT** | Domain fingerprinting, social mapping, WHOIS intelligence |
+| **Malware Analysis** | Shellcode analysis, YARA scanning, behavioral mapping |
 
 ---
 
-<p align="center">
-  <a href="https://github.com/dzdzdzdzdzdz213">github.com/dzdzdzdzdzdz213</a>
-</p>
+### 🏗️ Featured Project
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
-</p>
+## [ShieldWall](https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall)
+
+**Real-time Network Security Monitor** — packet capture, signature-based IDS, live dashboard
+
+```
+FastAPI backend  +  React frontend  +  WebSocket real-time updates
+```
+
+---
+
+### 📊 Cybersec Journey — 50 Tools
+
+A monorepo of 50 cybersecurity projects across **Python, PowerShell, Assembly, and HTML** — covering 20+ security domains. Every tool is independently runnable with its own README.
+
+[![Monorepo](https://img.shields.io/badge/📦_Monorepo-50_tools-1e2a3a?style=flat-square)](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
+
+---
+
+### 🔧 Tech Stack
+
+`Python` `FastAPI` `React` `Scapy` `PowerShell` `Assembly` `YARA` `SQLite` `Docker`
+
+---
+
+<div style="color: #576574; font-size: 12px;">
+
+*Building tools for learning. Security research and education.*
+
+</div>
+
+</div>
