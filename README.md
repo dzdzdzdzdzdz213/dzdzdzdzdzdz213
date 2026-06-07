@@ -3,9 +3,11 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=00FF00&center=true&vCenter=true&width=500&lines=Hey%2C+I'm+Aimen;Security+Engineer;Tool+Builder;Network+Defender" alt="Typing SVG" />
   
   <p>
+    <a href="https://github.com/dzdzdzdzdzdz213/beacon-guard"><img src="https://img.shields.io/badge/BeaconGuard-eBPF-FF6B6B?style=flat-square&logo=linux&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline"><img src="https://img.shields.io/badge/CloudSec_Pipeline-OPA%2FRego-7B2FF7?style=flat-square&logo=openpolicyagent&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey"><img src="https://img.shields.io/badge/50_Cybersec_Tools-FF6B6B?style=flat-square&logo=python&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall"><img src="https://img.shields.io/badge/ShieldWall-IDS-00ADD8?style=flat-square&logo=fastapi&logoColor=white" /></a>
+    <img src="https://img.shields.io/badge/eBPF-Behavioral-00FF88?style=flat-square&logo=linux&logoColor=white" />
     <img src="https://img.shields.io/badge/MITRE_ATT%26CK-Mapped-005A9C?style=flat-square&logo=mitre&logoColor=white" />
     <img src="https://komarev.com/ghpvc/?username=dzdzdzdzdzdz213&style=flat-square&color=00FF00" />
   </p>
@@ -14,11 +16,30 @@
 
 ---
 
-I build **cybersecurity infrastructure** — network monitors, policy engines, detection systems, and red team tools. I work across the stack, from Python/FastAPI backends and React dashboards to low-level x86 Assembly and C.
+I build **cybersecurity infrastructure** — kernel-level behavioral guards, network monitors, policy engines, detection systems, and red team tools. I work from eBPF/C kernel programs and Go loaders up through FastAPI backends to React dashboards.
 
 ---
 
 ## 📌 Featured Projects
+
+### [BeaconGuard — Behavioral Kernel Guard](https://github.com/dzdzdzdzdzdz213/beacon-guard)
+> **eBPF-based runtime security monitor — hooks syscalls, builds per-process baselines, kills anomalies in real time**
+
+```
+eBPF (execve/open/connect/mmap/ptrace)  →  Ring buffer  →  Go loader
+                                          →  Behavioral engine (profile + baseline + anomaly)
+                                          →  Kill / Block / Alert  →  FastAPI  →  React dashboard
+```
+
+- **6 eBPF hook types**: execve, openat, tcp_v4_connect, udp_sendmsg, vm_mmap, ptrace
+- **10 detection rules**: beaconing (variance analysis), reverse shell ports, DNS tunneling, mass deletion, sensitive file writes, unexpected binaries, executable mmap, ptrace injection
+- **Learning mode**: 1-hour baseline auto-calibration, then enforcement
+- **Low-variance beaconing detection** — finds periodic C2 callbacks by analyzing connection interval variance
+- **Ring buffer + suspicion map** in kernel space, Go userspace with REST API + SSE streaming
+- **React dashboard** with real-time timeline, process table, alert feed, live stats
+- Docker Compose for full-stack deployment
+
+---
 
 ### [ShieldWall — Network Security Monitor](https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall)
 > **Real-time IDS with plugin detection engine, MITRE ATT&CK mapping, and live dashboard**
@@ -72,8 +93,8 @@ Monorepo of 50 independently-runnable tools spanning 7 security domains:
 ## 🧰 Skills & Tools
 
 ```
-Languages      Python  ·  C  ·  x86/x64 Assembly  ·  JavaScript  ·  PowerShell  ·  Go  ·  Rego
-Frameworks     FastAPI  ·  React  ·  Flask  ·  Recharts  ·  Scapy  ·  YARA
+Languages      C  ·  Go  ·  Python  ·  eBPF  ·  x86/x64 Assembly  ·  JavaScript  ·  PowerShell  ·  Rego
+Frameworks     FastAPI  ·  React  ·  Recharts  ·  Scapy  ·  YARA  ·  libbpf
 Infrastructure Docker  ·  Kubernetes  ·  ArgoCD  ·  OPA/Gatekeeper  ·  Terraform
 Storage        SQLite  ·  PostgreSQL  ·  Elasticsearch  ·  Redis
 Security       Network analysis  ·  Cryptography  ·  Forensics  ·  Malware analysis  ·  OSINT
@@ -92,7 +113,7 @@ Security       Network analysis  ·  Cryptography  ·  Forensics  ·  Malware an
   
   <br />
   
-  [![ShieldWall](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cybersec-journey&theme=dark&hide_border=true&description_lines_count=2)](https://github.com/dzdzdzdzdzdz213/cybersec-journey)
+  [![BeaconGuard](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=beacon-guard&theme=dark&hide_border=true&description_lines_count=2)](https://github.com/dzdzdzdzdzdz213/beacon-guard)
   [![CloudSec Pipeline](https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cloudsec-pipeline&theme=dark&hide_border=true&description_lines_count=2)](https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline)
   
 </div>
