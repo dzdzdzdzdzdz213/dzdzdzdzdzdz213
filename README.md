@@ -4,6 +4,8 @@
   
   <p>
     <a href="https://github.com/dzdzdzdzdzdz213/beacon-guard"><img src="https://img.shields.io/badge/BeaconGuard-eBPF_Kernel_Guard-00FF88?style=flat-square&logo=linux&logoColor=white" /></a>
+    <a href="https://github.com/dzdzdzdzdzdz213/k8s-runtime-guard"><img src="https://img.shields.io/badge/K8s_Runtime_Guard-eBPF_Container_Security-58A6FF?style=flat-square&logo=kubernetes&logoColor=white" /></a>
+    <a href="https://github.com/dzdzdzdzdzdz213/cloudsweep"><img src="https://img.shields.io/badge/CloudSweep-CSPM_Scanner-FF6B6B?style=flat-square&logo=amazonaws&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline"><img src="https://img.shields.io/badge/CloudSec_Pipeline-OPA%2FRego-7B2FF7?style=flat-square&logo=openpolicyagent&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey"><img src="https://img.shields.io/badge/Cybersec_Journey-50_Tools-FF6B6B?style=flat-square&logo=python&logoColor=white" /></a>
     <img src="https://img.shields.io/badge/eBPF-Behavioral_Detection-00FF88?style=flat-square&logo=linux&logoColor=white" />
@@ -58,6 +60,31 @@ Developer PR ──→ GitHub Actions ──→ OPA policy evaluation ──→ 
 - Gatekeeper constraint templates for admission control
 - Go CLI tool for local policy validation
 - Docker Compose + Kind deployment script
+
+---
+
+### [K8s Runtime Guard — Container Security](https://github.com/dzdzdzdzdzdz213/k8s-runtime-guard)
+
+Container-aware runtime security powered by eBPF. Detects escape attempts, cross-namespace attacks, and suspicious container behavior via kernel hooks correlated with K8s audit logs.
+
+- **9 eBPF hooks**: fork, exec, exit, clone (namespace flags), ptrace, mount, cgroup attach, proc access, release_agent
+- **10 detection rules**: container escape, cross-ns ptrace, cgroup release_agent (CVE-2022-0492), privileged namespace creation, shell in container, host /proc access, fork bomb, K8s exec, sensitive mount
+- **K8s audit log correlation**: matches kubectl exec/attach events to container processes
+- **Two-phase operation**: learning mode builds per-container baselines → enforcement detects deviations
+- **Mock mode for development**: runs on any platform with simulated container escape scenarios
+- **Tech stack**: C (eBPF), Go (cilium/ebpf + REST API), K8s audit API, Docker
+
+---
+
+### [CloudSweep — CSPM Scanner](https://github.com/dzdzdzdzdzdz213/cloudsweep)
+
+Cloud Security Posture Management scanner for AWS. 50+ checks across 9 services with rich reporting in table, JSON, and HTML format.
+
+- **51 security checks**: S3 (8), EC2 (10), IAM (8), KMS (4), CloudTrail (5), RDS (5), Lambda (4), VPC (4), GuardDuty (3)
+- **Severity-graded findings**: critical → high → medium → low with remediation guidance
+- **HTML reports**: standalone dark-themed report with severity-coded tables
+- **Config-driven**: YAML config for regions, services, and thresholds
+- **Tech stack**: Python, boto3, Rich (terminal), HTML/JSON reporting
 
 ---
 
@@ -116,11 +143,11 @@ Security      Network analysis · Cryptography · Forensics · Malware · OSINT
   <a href="https://github.com/dzdzdzdzdzdz213/beacon-guard">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=beacon-guard&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
   </a>
-  <a href="https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cloudsec-pipeline&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
+  <a href="https://github.com/dzdzdzdzdzdz213/k8s-runtime-guard">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=k8s-runtime-guard&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
   </a>
-  <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cybersec-journey&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
+  <a href="https://github.com/dzdzdzdzdzdz213/cloudsweep">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cloudsweep&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
   </a>
   
 </div>
