@@ -6,6 +6,7 @@
     <a href="https://github.com/dzdzdzdzdzdz213/beacon-guard"><img src="https://img.shields.io/badge/BeaconGuard-eBPF_Kernel_Guard-00FF88?style=flat-square&logo=linux&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/k8s-runtime-guard"><img src="https://img.shields.io/badge/K8s_Runtime_Guard-eBPF_Container_Security-58A6FF?style=flat-square&logo=kubernetes&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cloudsweep"><img src="https://img.shields.io/badge/CloudSweep-CSPM_Scanner-FF6B6B?style=flat-square&logo=amazonaws&logoColor=white" /></a>
+    <a href="https://github.com/dzdzdzdzdzdz213/watchtower"><img src="https://img.shields.io/badge/WatchTower-SIEM_Platform-58A6FF?style=flat-square&logo=datadog&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cloudsec-pipeline"><img src="https://img.shields.io/badge/CloudSec_Pipeline-OPA%2FRego-7B2FF7?style=flat-square&logo=openpolicyagent&logoColor=white" /></a>
     <a href="https://github.com/dzdzdzdzdzdz213/cybersec-journey"><img src="https://img.shields.io/badge/Cybersec_Journey-50_Tools-FF6B6B?style=flat-square&logo=python&logoColor=white" /></a>
     <img src="https://img.shields.io/badge/eBPF-Behavioral_Detection-00FF88?style=flat-square&logo=linux&logoColor=white" />
@@ -87,6 +88,27 @@ Cloud Security Posture Management scanner for AWS. 50+ checks across 9 services 
 - **Tech stack**: Python, boto3, Rich (terminal), HTML/JSON reporting
 
 ---
+    
+### [WatchTower — SIEM Platform](https://github.com/dzdzdzdzdzdz213/watchtower)
+
+Multi-tenant security information and event management platform for SMBs. Ingest server logs, detect threats with real-time rule engine, and visualize everything in a professional security dashboard.
+
+```
+Server Logs ──→ Log Parser ──→ Detection Rules ──→ PostgreSQL ──→ FastAPI ──→ React Dashboard
+                 (SSH/Nginx/      (7 rules: brute                 (REST API,    (Recharts,
+                  JSON/Syslog)     force, SQLi,                    WebSocket)     live alerts)
+                                   port scan...)
+```
+
+- **Log parser**: auto-detects 4 formats (SSH auth, Nginx combined, JSON, syslog) — never crashes on malformed input
+- **Detection rules**: brute force SSH, port scan, SQL injection, off-hours login, mass failed logins, admin enumeration, path enumeration
+- **Alert dedup**: same rule+IP within 5 minutes updates last_seen instead of creating duplicates
+- **Real-time alerts**: WebSocket push to dashboard, SSE streaming
+- **Dashboard**: stacked area charts, severity donut, top IPs bar chart, live alert feed
+- **Tech stack**: FastAPI, PostgreSQL, SQLAlchemy async, React 18, TailwindCSS, Recharts, WebSocket
+- **Deployment**: Render (backend), Vercel (frontend), Neon (database)
+
+---
 
 ### [ShieldWall — Network Security Monitor](https://github.com/dzdzdzdzdzdz213/cybersec-journey/tree/master/shieldwall)
 
@@ -148,6 +170,9 @@ Security      Network analysis · Cryptography · Forensics · Malware · OSINT
   </a>
   <a href="https://github.com/dzdzdzdzdzdz213/cloudsweep">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=cloudsweep&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
+  </a>
+  <a href="https://github.com/dzdzdzdzdzdz213/watchtower">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=dzdzdzdzdzdz213&repo=watchtower&theme=dark&hide_border=true&bg_color=0D1117&description_lines_count=1" />
   </a>
   
 </div>
